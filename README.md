@@ -13,7 +13,10 @@ Objetivos:
 * 
 
 **Caso: Ejericio 6 del TP 1**
+
 Propone: 
+>Declarar dos variables enteras (con cualquier valor) e informar por pantalla cual es menor de las dos, si son iguales, indicarlo por separado. Cambiar el orden de los valores para comprobar el funcionamiento.
+
 
 1) Primero la intención es que usen alternativa condicional
 ```
