@@ -4,7 +4,7 @@
 IDE: Spyder del paquete ANCONDA: https://www.anaconda.com/distribution/
 
 
-CLASES 1, 2 y 3 - Introducción a Python 
+## CLASES 1, 2 y 3 - Introducción a Python 
 
 Objetivos: 
 * familiarizarse con la sintaxis Python, realizar operaciones y cálculos usando instrucciones, consola, ver resultados
@@ -40,5 +40,14 @@ def mayorOIgual(numero1,numero2):
 print('otra forma de hacerlo al estilo Gobstones')
 print(mayorOIgual(variable1,variable2))
 ```
+
+## Clases 4 y 5  - Tipo Abstracto de Datos
+
+Objetivos:
+ * Introducir el concepto de TDA
+
+**En la primera clase también se puede trabajar relacionado con Gobstones (registros y variantes)**
+
+
 
 
