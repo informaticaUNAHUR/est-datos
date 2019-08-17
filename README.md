@@ -12,7 +12,7 @@ Objetivos:
 * Repasar estructuras de control
 * 
 
-** Caso: Ejericio 6 del TP 1
+** Caso: Ejericio 6 del TP 1 **
 Propone: 
 
 1) Primero la intención es que usen alternativa condicional
