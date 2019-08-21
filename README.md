@@ -97,6 +97,8 @@ tubo2=nuevaTuberia('Norte',190)
 
 print('¿es más largo el tubo1 que el tubo2?:', masLargo(tubo1,tubo2))
 
+
+
 ### OPCIÓN 2
 
 Usar método constructor
