@@ -76,7 +76,7 @@ Referencia de cómo armar TAD en Python sin tener que meterse demasiado en el co
 https://sites.google.com/site/programacioniiuno/temario/unidad-2---tipo-abstracto-de-dato/emulando-un-struct-en-python
 (ver apartado: Clase vacía con función constructora)
 
-# OPCIÓN 1 
+### OPCIÓN 1 
 ¿sirve así?
 
 ````
