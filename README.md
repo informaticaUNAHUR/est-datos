@@ -48,7 +48,7 @@ Objetivos:
 
 **En la primera clase también se puede trabajar relacionado con Gobstones (registros y variantes)**
 
-Por ejemplo, en Gobstones trabajamos un ejercicio: 
+Por ejemplo, en Gobstones trabajamos un ejercicio: https://github.com/informaticaUNAHUR/est-datos/blob/master/Gobstones-Intro/Integrador%202019s1.pdf
 
 donde se define:
 
