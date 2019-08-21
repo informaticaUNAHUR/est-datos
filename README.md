@@ -48,7 +48,7 @@ Objetivos:
 
 **En la primera clase también se puede trabajar relacionado con Gobstones (registros y variantes)**
 
-Por ejemplo, en Gobstones trabajamos un ejercicio:
+Por ejemplo, en Gobstones trabajamos un ejercicio: 
 
 donde se define:
 
