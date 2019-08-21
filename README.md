@@ -79,7 +79,7 @@ https://sites.google.com/site/programacioniiuno/temario/unidad-2---tipo-abstract
 ### OPCIÓN 1 
 ¿sirve así? NOTA: no puse todos los "field" y el variant al principio no lo trataría como algo aparte. Entiendo que Gobstones lo tiene dado que utiliza tipos fijos (Color, Número, Dirección) pero si necesita otra "variante" se definen de esa manera. 
 
-````
+```
 class Tuberia:
     pass
 
@@ -98,12 +98,14 @@ tubo2=nuevaTuberia('Norte',190)
 print('¿es más largo el tubo1 que el tubo2?:', masLargo(tubo1,tubo2))
 
 
+```
 
 ### OPCIÓN 2
 
 Usar método constructor
 
-´´´
+
+```
 class Tuberia:
     def __init__(self,direccion,largo):
         self.direccion=direccion
@@ -117,4 +119,4 @@ tubo2=Tuberia('Norte',190)
 
 print('¿es más largo el tubo1 que el tubo2?:', masLargo(tubo1,tubo2))
 
-´´´
+```
