@@ -48,6 +48,52 @@ Objetivos:
 
 **En la primera clase también se puede trabajar relacionado con Gobstones (registros y variantes)**
 
+Por ejemplo, en Gobstones trabajamos un ejercicio:
+
+donde se define:
+
+```
+type Tubería is record {
+/* PROPÓSITO: Modela una tubería.
+INV. DE REP. el largo es mayor a cero. */
+field dirección // Dirección
+field color  // Color
+field largo  // Número
+field grosor // Grosor
+}
+
+type Grosor is variant {
+/* PROPÓSITO: Modela el grosor de una tubería */
+case Medio {}
+case TresCuartos {}
+case Pulgada {}
+}
+
+```
 
 
+Referencia de cómo armar TAD en Python sin tener que meterse demasiado en el concepto de clases:
+https://sites.google.com/site/programacioniiuno/temario/unidad-2---tipo-abstracto-de-dato/emulando-un-struct-en-python
+(ver apartado: Clase vacía con función constructora)
+
+### OPCIÓN 1 
+¿sirve así? NOTA: no puse todos los "field" y el variant al principio no lo trataría como algo aparte. Entiendo que Gobstones lo tiene dado que utiliza tipos fijos (Color, Número, Dirección) pero si necesita otra "variante" se definen de esa manera. 
+
+````
+class Tuberia:
+    pass
+
+def nuevaTuberia(direccion, largo):
+    tuberia = Tuberia()
+    tuberia.direccion = direccion
+    tuberia.largo = largo
+    return tuberia
+
+def masLargo(tuberia1,tuberia2):
+    return(tuberia1.largo>tuberia2.largo)
+
+tubo1=nuevaTuberia('Oeste', 100)
+tubo2=nuevaTuberia('Norte',190)
+
+print('¿es más largo el tubo1 que el tubo2?:', masLargo(tubo1,tubo2))
 
