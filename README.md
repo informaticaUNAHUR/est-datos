@@ -97,3 +97,22 @@ tubo2=nuevaTuberia('Norte',190)
 
 print('¿es más largo el tubo1 que el tubo2?:', masLargo(tubo1,tubo2))
 
+### OPCIÓN 2
+
+Usar método constructor
+
+´´´
+class Tuberia:
+    def __init__(self,direccion,largo):
+        self.direccion=direccion
+        self.largo=largo
+
+def masLargo(tuberia1,tuberia2):
+    return(tuberia1.largo>tuberia2.largo)
+
+tubo1=Tuberia('Oeste', 100)
+tubo2=Tuberia('Norte',190)
+
+print('¿es más largo el tubo1 que el tubo2?:', masLargo(tubo1,tubo2))
+
+´´´
