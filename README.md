@@ -104,6 +104,7 @@ print('¿es más largo el tubo1 que el tubo2?:', masLargo(tubo1,tubo2))
 
 Usar método constructor
 
+Referencia (que puede servir para listas enlazadas armadas con TAD): https://medium.com/@kojinoshiba/data-structures-in-python-series-1-linked-lists-d9f848537b4d
 
 ```
 class Tuberia:
