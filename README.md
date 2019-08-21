@@ -48,6 +48,34 @@ Objetivos:
 
 **En la primera clase también se puede trabajar relacionado con Gobstones (registros y variantes)**
 
+Por ejemplo, en Gobstones trabajamos un ejercicio:
+
+donde se define:
+
+```
+type Tubería is record {
+/* PROPÓSITO: Modela una tubería.
+INV. DE REP. el largo es mayor a cero. */
+field dirección // Dirección
+field color  // Color
+field largo  // Número
+field grosor // Grosor
+}
+
+type Grosor is variant {
+/* PROPÓSITO: Modela el grosor de una tubería */
+case Medio {}
+case TresCuartos {}
+case Pulgada {}
+}
+
+```
+
+
+
+Referencia de cómo armar TAD en Python sin tener que meterse demasiado en el concepto de clases:
+https://sites.google.com/site/programacioniiuno/temario/unidad-2---tipo-abstracto-de-dato/emulando-un-struct-en-python
+(ver apartado: Clase vacía con función constructora)
 
 
 
