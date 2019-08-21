@@ -77,7 +77,7 @@ https://sites.google.com/site/programacioniiuno/temario/unidad-2---tipo-abstract
 (ver apartado: Clase vacía con función constructora)
 
 ### OPCIÓN 1 
-¿sirve así?
+¿sirve así? NOTA: no puse todos los "field" y el variant al principio no lo trataría como algo aparte. Entiendo que Gobstones lo tiene dado que utiliza tipos fijos (Color, Número, Dirección) pero si necesita otra "variante" se definen de esa manera. 
 
 ````
 class Tuberia:
