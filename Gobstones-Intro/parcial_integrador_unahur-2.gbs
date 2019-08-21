@@ -1,0 +1,76 @@
+// 1
+function seVieneUnaCurva(cañería) {
+    return (dirección(primero(cañería)) /= dirección(segundo(cañería)))
+}
+
+function segundo(lista) {
+    return (primero(sinElPrimero(lista)))
+}
+
+// 2
+procedure PonerEnTablero_(cañería) {
+    foreach tubería in cañería {
+        PonerTubería(tubería)
+    }
+}
+
+procedure PonerTubería(tubería) {
+    repeat(largo(tubería) - 1) {
+        PonerParteDeTubería(tubería)
+        Mover(dirección(tubería))
+    }
+    PonerParteDeTubería(tubería)
+}
+
+procedure PonerParteDeTubería(tubería) {
+    Poner__Veces(color(tubería), cantidadDeBolitasParaGrosor(grosor(tubería)))
+}
+
+function cantidadDeBolitasParaGrosor(grosor) {
+    return (choose
+        2 when (grosor == Media)
+        3 when (grosor == TresCuartos)
+        4 otherwise
+    })
+}
+
+// 3
+function entraEnElTablero_Desde_y_(cañería, númeroDeFila, númeroDeColumna) {
+    IrACoordenada(númeroDeFila, númeroDeColumna)
+    cañeríaNoRecorrida := cañería
+    while (not esVacía(cañeríaNoRecorrida) && entraTubería_EnElTablero(primero(cañeríaNoRecorrida))) {
+        cañeríaNoRecorrida := sinElPrimero(cañeríaNoRecorrida)
+    }
+    return (esVacía(cañeríaNoRecorrida))
+}
+
+function entraTubería_EnElTablero(tubería) {
+    return (distanciaAlBorde(dirección(tubería)) >= largo(tubería))
+}
+
+// 4
+procedure PonerEnTablero_Desde_Y_(cañería, númeroDeFila, númeroDeColumna) {
+    if (entraEnElTablero_Desde_y_(cañería, númeroDeFila, númeroDeColumna)) {
+        IrACoordenada(númeroDeFila, númeroDeColumna)
+        PonerEnTablero_(cañería)
+    }
+}
+
+// 5
+function cantidadDeAdaptadores(cañería) {
+    cantidadDeAdaptadoresNecesariosHastaAhora := 0
+    últimaMedidaDeTubería := grosor(primero(cañería))
+    foreach tubería in sinElPrimero(cañería) {
+        cantidadDeAdaptadoresNecesariosHastaAhora :=
+            cantidadDeAdaptadoresNecesariosHastaAhora + unoSiSonGrosoresDistintos(ultimaMedidaDeTubería, grosor(tubería))
+        últimaMedidaDeTubería := grosor(tubería)
+    }
+    return (cantidadDeAdaptadoresNecesariosHastaAhora)
+}
+
+function unoSiSonGrosoresDistintos(grosorA, grosorB) {
+    return (choose
+        1 when (grosorA /= grosorB)
+        0 otherwise
+    })
+}
