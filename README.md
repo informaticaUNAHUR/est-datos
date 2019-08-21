@@ -72,10 +72,28 @@ case Pulgada {}
 ```
 
 
-
 Referencia de cómo armar TAD en Python sin tener que meterse demasiado en el concepto de clases:
 https://sites.google.com/site/programacioniiuno/temario/unidad-2---tipo-abstracto-de-dato/emulando-un-struct-en-python
 (ver apartado: Clase vacía con función constructora)
 
+# OPCIÓN 1 
+¿sirve así?
 
+````
+class Tuberia:
+    pass
+
+def nuevaTuberia(direccion, largo):
+    tuberia = Tuberia()
+    tuberia.direccion = direccion
+    tuberia.largo = largo
+    return tuberia
+
+def masLargo(tuberia1,tuberia2):
+    return(tuberia1.largo>tuberia2.largo)
+
+tubo1=nuevaTuberia('Oeste', 100)
+tubo2=nuevaTuberia('Norte',190)
+
+print('¿es más largo el tubo1 que el tubo2?:', masLargo(tubo1,tubo2))
 
