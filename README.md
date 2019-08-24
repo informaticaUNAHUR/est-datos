@@ -150,6 +150,6 @@ print('la direccion del tubo1 es:',tubo1.direccion)
 tubo1.cambiarDireccion('Sur')
 
 print('Cambiamos la direccion del tubo1, ahora es:', tubo1.direccion)
-``
+````
 
 
