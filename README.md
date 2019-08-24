@@ -131,6 +131,8 @@ print('Cambiamos la dirección del tubo1, ahora es:', tubo1.direccion)
 
 Usar métodos dentro de la clase
 
+referencia: http://www.cse.iitd.ernet.in/~pkalra/csl101/Python-ADT.pdf
+
 ```
 class Tuberia:
 	def __init__(self,direccion,largo):
