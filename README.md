@@ -53,17 +53,17 @@ Por ejemplo, en Gobstones trabajamos un ejercicio: https://github.com/informatic
 donde se define:
 
 ```
-type Tubería is record {
-/* PROPÓSITO: Modela una tubería.
+type Tubería is record {
+/* PROPÓSITO: Modela una tubería.
 INV. DE REP. el largo es mayor a cero. */
-field dirección // Dirección
+field dirección // Dirección
 field color  // Color
 field largo  // Número
 field grosor // Grosor
 }
 
 type Grosor is variant {
-/* PROPÓSITO: Modela el grosor de una tubería */
+/* PROPÓSITO: Modela el grosor de una tubería */
 case Medio {}
 case TresCuartos {}
 case Pulgada {}
@@ -102,22 +102,54 @@ print('¿es más largo el tubo1 que el tubo2?:', masLargo(tubo1,tubo2))
 
 ### OPCIÓN 2
 
-Usar método constructor
+Usar método constructor pero todas las operaciones definidas como funciones externas a la clase y se pasa como parámetro la instancia.
 
 Referencia (que puede servir para listas enlazadas armadas con TAD): https://medium.com/@kojinoshiba/data-structures-in-python-series-1-linked-lists-d9f848537b4d
 
 ```
 class Tuberia:
-    def __init__(self,direccion,largo):
-        self.direccion=direccion
-        self.largo=largo
+	def __init__(self,direccion,largo):
+		self.direccion=direccion
+		self.largo=largo
+		
+def cambiarDireccion(tuberia,nuevaDireccion):
+	tuberia.direccion=nuevaDireccion
 
 def masLargo(tuberia1,tuberia2):
-    return(tuberia1.largo>tuberia2.largo)
+	return(tuberia1.largo>tuberia2.largo)
 
 tubo1=Tuberia('Oeste', 100)
 tubo2=Tuberia('Norte',190)
 
-print('¿es más largo el tubo1 que el tubo2?:', masLargo(tubo1,tubo2))
+print('la dirección del tubo1 es:',tubo1.direccion)
+
+cambiarDireccion(tubo1,'Sur')
+
+print('Cambiamos la dirección del tubo1, ahora es:', tubo1.direccion)
+```
+### OPCIÓN 3
+
+Usar métodos dentro de la clase
 
 ```
+class Tuberia:
+	def __init__(self,direccion,largo):
+		self.direccion=direccion
+		self.largo=largo
+	def cambiarDireccion(self,nuevaDireccion):
+		self.direccion=nuevaDireccion
+
+def masLargo(tuberia1,tuberia2):
+	return(tuberia1.largo>tuberia2.largo)
+
+tubo1=Tuberia('Oeste', 100)
+tubo2=Tuberia('Norte',190)
+
+print('la direccion del tubo1 es:',tubo1.direccion)
+
+tubo1.cambiarDireccion('Sur')
+
+print('Cambiamos la direccion del tubo1, ahora es:', tubo1.direccion)
+``
+
+
