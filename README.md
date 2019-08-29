@@ -76,6 +76,26 @@ Referencia de cómo armar TAD en Python sin tener que meterse demasiado en el co
 https://sites.google.com/site/programacioniiuno/temario/unidad-2---tipo-abstracto-de-dato/emulando-un-struct-en-python
 (ver apartado: Clase vacía con función constructora)
 
+### OPCIÓN 0 (sin usar clases)
+
+Se usa diccionarios, enumerativos...
+
+```
+from enum import Enum
+
+def nuevaTuberia(direccion, largo):
+  return { 'direccion': direccion, 'largo': largo }
+
+def masLargo(tub1, tub2):
+  return tub1['largo'] > tub2['largo']
+
+Direccion = Enum('Direccion', ['NORTE','SUR','ESTE','OESTE'])
+tubo1 = nuevaTuberia(Direccion.NORTE,88)
+tubo2 = nuevaTuberia(Direccion.SUR,100)
+
+print('es mas largo tubo1 que tubo2? ',masLargo(tubo1,tubo2))
+```
+
 ### OPCIÓN 1 
 ¿sirve así? NOTA: no puse todos los "field" y el variant al principio no lo trataría como algo aparte. Entiendo que Gobstones lo tiene dado que utiliza tipos fijos (Color, Número, Dirección) pero si necesita otra "variante" se definen de esa manera. 
 
