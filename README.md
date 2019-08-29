@@ -96,6 +96,31 @@ tubo2 = nuevaTuberia(Direccion.SUR,100)
 print('es mas largo tubo1 que tubo2? ',masLargo(tubo1,tubo2))
 ```
 
+Ejemplo aplicador al Ej. 2 TP 2
+
+```
+def nuevaFraccion(numerador,denominador):
+	return {'numerador': numerador, 'denominador': denominador}
+
+def obtenerNumerador(frac):
+	return frac['numerador']
+	
+def obtenerDenominador(frac):
+	return frac['denominador']
+
+def sumaFracciones(frac1,frac2):
+	numerador=frac1['numerador']+frac2['numerador']
+	denominador=frac1['denominador']+frac2['denominador']
+	return nuevaFraccion(numerador,denominador)
+
+fraccion1=nuevaFraccion(2,9)
+fraccion2=nuevaFraccion(7,1)
+
+print('la suma es:',sumaFracciones(fraccion1,fraccion2))
+```
+
+
+
 ### OPCIÓN 1 
 ¿sirve así? NOTA: no puse todos los "field" y el variant al principio no lo trataría como algo aparte. Entiendo que Gobstones lo tiene dado que utiliza tipos fijos (Color, Número, Dirección) pero si necesita otra "variante" se definen de esa manera. 
 
