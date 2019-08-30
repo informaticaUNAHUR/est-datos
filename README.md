@@ -120,7 +120,7 @@ nodo2['proximo']=nodo3
 
 
 imprimeLista(nodo1)
-``
+```
 
 Ejemplo aplicador al Ej. 2 TP 2
 
