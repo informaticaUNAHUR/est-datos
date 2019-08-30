@@ -96,6 +96,32 @@ tubo2 = nuevaTuberia(Direccion.SUR,100)
 print('es mas largo tubo1 que tubo2? ',masLargo(tubo1,tubo2))
 ```
 
+Ejemplo de LISTA simplemente enlazada
+
+```
+def nodo(valor):
+	proximo=None
+	return {'valor':valor,'proximo':proximo}
+
+def imprimeLista(nodo):
+	print(nodo['valor'],end='->')
+	while nodo['proximo'] != None:
+		nodo=nodo['proximo']
+		print(nodo['valor'],end='->')
+	
+
+
+nodo1=nodo(10)
+nodo2=nodo(3)
+nodo3=nodo(8)
+
+nodo1['proximo']=nodo2
+nodo2['proximo']=nodo3
+
+
+imprimeLista(nodo1)
+``
+
 Ejemplo aplicador al Ej. 2 TP 2
 
 ```
