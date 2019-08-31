@@ -1,0 +1,3 @@
+# Ideas para ejercicios
+
+## TDA
