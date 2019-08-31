@@ -12,7 +12,9 @@
    --> circunsferencia
    --> área
    --> superpuesto con otro?
-   --> 
+   --> mover el centro
+   --> punto incluido?
+   
    
    
 
