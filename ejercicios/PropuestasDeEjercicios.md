@@ -15,7 +15,7 @@
    --> mover el centro
    --> punto incluido?
    
-   
+   * Se puede dar parte a completar *
    
 
 ## PILAS
