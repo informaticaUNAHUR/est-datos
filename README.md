@@ -145,6 +145,8 @@ fraccion2=nuevaFraccion(7,1)
 print('la suma es:',sumaFracciones(fraccion1,fraccion2))
 ```
 
+### OPCION 0 - b
+
 
 
 ### OPCIÓN 1 
