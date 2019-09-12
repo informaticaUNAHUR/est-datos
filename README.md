@@ -76,6 +76,77 @@ Referencia de cómo armar TAD en Python sin tener que meterse demasiado en el co
 https://sites.google.com/site/programacioniiuno/temario/unidad-2---tipo-abstracto-de-dato/emulando-un-struct-en-python
 (ver apartado: Clase vacía con función constructora)
 
+### OPCIÓN 0 (sin usar clases)
+
+Se usa diccionarios, enumerativos...
+
+```
+from enum import Enum
+
+def nuevaTuberia(direccion, largo):
+  return { 'direccion': direccion, 'largo': largo }
+
+def masLargo(tub1, tub2):
+  return tub1['largo'] > tub2['largo']
+
+Direccion = Enum('Direccion', ['NORTE','SUR','ESTE','OESTE'])
+tubo1 = nuevaTuberia(Direccion.NORTE,88)
+tubo2 = nuevaTuberia(Direccion.SUR,100)
+
+print('es mas largo tubo1 que tubo2? ',masLargo(tubo1,tubo2))
+```
+
+Ejemplo de LISTA simplemente enlazada
+
+```
+def nodo(valor):
+	proximo=None
+	return {'valor':valor,'proximo':proximo}
+
+def imprimeLista(nodo):
+	print(nodo['valor'],end='->')
+	while nodo['proximo'] != None:
+		nodo=nodo['proximo']
+		print(nodo['valor'],end='->')
+	
+
+
+nodo1=nodo(10)
+nodo2=nodo(3)
+nodo3=nodo(8)
+
+nodo1['proximo']=nodo2
+nodo2['proximo']=nodo3
+
+
+imprimeLista(nodo1)
+```
+
+Ejemplo aplicador al Ej. 2 TP 2
+
+```
+def nuevaFraccion(numerador,denominador):
+	return {'numerador': numerador, 'denominador': denominador}
+
+def obtenerNumerador(frac):
+	return frac['numerador']
+	
+def obtenerDenominador(frac):
+	return frac['denominador']
+
+def sumaFracciones(frac1,frac2):
+	numerador=frac1['numerador']+frac2['numerador']
+	denominador=frac1['denominador']+frac2['denominador']
+	return nuevaFraccion(numerador,denominador)
+
+fraccion1=nuevaFraccion(2,9)
+fraccion2=nuevaFraccion(7,1)
+
+print('la suma es:',sumaFracciones(fraccion1,fraccion2))
+```
+
+
+
 ### OPCIÓN 1 
 ¿sirve así? NOTA: no puse todos los "field" y el variant al principio no lo trataría como algo aparte. Entiendo que Gobstones lo tiene dado que utiliza tipos fijos (Color, Número, Dirección) pero si necesita otra "variante" se definen de esa manera. 
 
