@@ -147,7 +147,10 @@ print('la suma es:',sumaFracciones(fraccion1,fraccion2))
 
 ### OPCION 0 - b
 
+Alternativas de implementación de TDA sugeridas por Alan y Sergio: https://github.com/informaticaUNAHUR/est-datos/tree/master/material-para-revisar
 
+Ejercicios sugeridos por Carlos:
+https://github.com/informaticaUNAHUR/est-datos/tree/master/material-para-revisar
 
 ### OPCIÓN 1 
 ¿sirve así? NOTA: no puse todos los "field" y el variant al principio no lo trataría como algo aparte. Entiendo que Gobstones lo tiene dado que utiliza tipos fijos (Color, Número, Dirección) pero si necesita otra "variante" se definen de esa manera. 
