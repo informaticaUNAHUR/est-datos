@@ -17,3 +17,6 @@ Crear una TDA Carta que contenga un palo y un valor.
 Armar una PilaDeCartas que vaya apilando las cartas una debajo de otra, pero sólo permita apilarlas si son de 
 un número inmediatamente inferior y de distinto palo. 
 Escribir un procedimiento que muestre el estado de la Pila
+
+## 4. PAPA CALIENTE:
+https://runestone.academy/runestone/static/pythoned/BasicDS/SimulacionLaPatataCaliente.html
