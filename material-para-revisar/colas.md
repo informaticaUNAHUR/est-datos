@@ -1,6 +1,6 @@
-## Ejercicios
+# Ejercicios
 
-# 1. Torre de control:
+## 1. Torre de control:
 Modelar el trabajo de una torre de control de un aeropuerto, con una pista de aterrizaje. 
 La torre trabaja en dos etapas: reconocimiento y acción.
 
@@ -9,9 +9,9 @@ Acción, que haga aterrizar o bien despegar, al primero de los aviones que este 
    Debe desencolar el avión de su cola y devolver la información correspondiente
 Escribir un procedimiento que muestre el estado de cada Cola
 
-# 2. Atención a los pacientes de un consultorio medico
+## 2. Atención a los pacientes de un consultorio medico
 
-# 3. CARTAS
+## 3. CARTAS
 
 Crear una TDA Carta que contenga un palo y un valor.
 Armar una PilaDeCartas que vaya apilando las cartas una debajo de otra, pero sólo permita apilarlas si son de 
